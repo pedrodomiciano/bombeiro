@@ -11,7 +11,7 @@
   }
   
   .container {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
@@ -58,7 +58,7 @@
   }
   
   input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #0519b0;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -68,7 +68,7 @@
   }
   
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #1728ae;
   }
 
   

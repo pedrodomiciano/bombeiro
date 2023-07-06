@@ -9,8 +9,19 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  
 }
+ 
+.borda {
+border: solid 2px ;
+}
+
+.borda_top {
+  border: solid 2px ;
+  }
+
+  .borda_down {
+    border: solid 2px ;
+    }
 
 .logo-left,
 .logo-right {
@@ -28,24 +39,32 @@
 }
 
 .header h1 {
-  font-size: 35px;
+  font-size: 50px;
   font-weight: bold;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 body {
   font-family: Arial, sans-serif;
   padding: 40px;
-  background-color: #f1f1f1;
+  background-color: lightgrey;
 }
 
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-  background-color: #c6c6c6;
+.header-wrapper {
+  background-color: rgb(212, 0, 0);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
-  border-radius: 5px;
-  border: 1px solid rgb(0, 0, 0);
+}
+
+.logo-left,
+.logo-right {
+  margin-right: 10px;
 }
 
 .row {
@@ -57,19 +76,19 @@ body {
 }
 
 .column {
-  flex: 1 1 auto;
+  flex: 1 1 100%; /* Altere o valor aqui para ajustar a largura das colunas */
 }
 
 .form-group {
   margin-bottom: 10px;
-  font-size: 13px;
+  font-size: 20px;
+  margin: 10px;
 }
 
 label {
   display: block;
   font-weight: bold;
   margin-bottom: 6px;
-
 }
 
 .button-container {
@@ -80,34 +99,53 @@ label {
 
 input[type="date"],
 select,
-input[type="text"] {
+input[type="text"],
+textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-input[type="submit"] {
-  background-color: #28b334;
+.footer {
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer input[type="submit"] {
+  background-color: #0e2ddb;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif
 }
 
-input[type="submit"]:hover {
-  background-color: #2cf33d;
+.footer input[type="submit"]:hover {
+  background-color: #3a4efc;
 }
+
 textarea {
   resize: vertical;
-  width: 100%;
- border-radius: 5px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 30px;
   text-align: center;
   margin-top: 30px;
+}
+
+/* Media queries para tornar o formulário responsivo em dispositivos móveis */
+@media (max-width: 600px) {
+  .column {
+    flex: 1 1 100%;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

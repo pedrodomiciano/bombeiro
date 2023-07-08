@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="principal.css">
+  <title>Cadastro inicial</title>
+</head>
+
+<body>
+
+  <div class="borda_top">
+    <div class="header-wrapper">
+      <div class="column">
+        <div class="header">
+          <div class="logo-left">
+            <img src="/bombeiro-1/imagens/logo_pequena.png" alt="Logo Esquerda">
+          </div>
+          <div class="title">
+            <h1>Bombeiros Voluntários</h1>
+          </div>
+          <div class="logo-right">
+            <img src="/bombeiro-1/imagens/logo_medicina.png" alt="Logo Direita">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="borda">
+
+    <div class="dropdown">
+      <button class="dropdown-btn" onclick="toggleDropdown()">
+        <h3>TIPOS DE OCORRÊNCIA:</h3>
+      </button>
+      <div class="dropdown-content" id="dropdown-content">
+        <input type="checkbox" id="causa-animais" name="causa-animais">
+        <label for="causa-animais">Causado por Animais</label>
+
+        <input type="checkbox" id="causa-meio-transporte" name="causa-meio-transporte">
+        <label for="causa-meio-transporte">Meio de Transporte</label>
+
+        <input type="checkbox" id="causa-desmoronamento" name="causa-desmoronamento">
+        <label for="causa-desmoronamento">Desmoronamento</label>
+
+        <input type="checkbox" id="causa-deslisamento" name="causa-deslisamento">
+        <label for="causa-deslisamento">Deslizamento</label>
+
+        <input type="checkbox" id="causa-emergencia-medica" name="causa-emergencia-medica">
+        <label for="causa-emergencia-medica">Emergência Médica</label>
+
+        <input type="checkbox" id="causa-queda-altura-2m" name="causa-queda-altura-2m">
+        <label for="causa-queda-altura-2m">Queda de Altura 2m</label>
+
+        <input type="checkbox" id="causa-tentativa-suicidio" name="causa-tentativa-suicidio">
+        <label for="causa-tentativa-suicidio">Tentativa de Suicídio</label>
+
+        <input type="checkbox" id="causa-queda-propria-altura" name="causa-queda-propria-altura">
+        <label for="causa-queda-propria-altura">Queda Própria Altura</label>
+
+
+        <input type="checkbox" id="causa-afogamento" name="causa-afogamento">
+        <label for="causa-afogamento">Afogamento</label>
+
+        <input type="checkbox" id="causa-agressao" name="causa-agressao">
+        <label for="causa-agressao">Agressão</label>
+
+        <input type="checkbox" id="causa-atropelamento" name="causa-atropelamento">
+        <label for="causa-atropelamento">Atropelamento</label>
+
+        <input type="checkbox" id="causa-choque-eletrico" name="causa-choque-eletrico">
+        <label for="causa-choque-eletrico">Choque Elétrico</label>
+
+        <input type="checkbox" id="causa-desabamento" name="causa-desabamento">
+        <label for="causa-desabamento">Desabamento</label>
+
+        <input type="checkbox" id="causa-domestico" name="causa-domestico">
+        <label for="causa-domestico">Doméstico</label>
+
+        <input type="checkbox" id="causa-esportivo" name="causa-esportivo">
+        <label for="causa-esportivo">Esportivo</label>
+
+
+        <input type="checkbox" id="causa-intoxicacao" name="causa-intoxicacao">
+        <label for="causa-intoxicacao">Intoxicação</label>
+
+        <input type="checkbox" id="causa-queda-bicicleta" name="causa-queda-bicicleta">
+        <label for="causa-queda-bicicleta">Queda de Bicicleta</label>
+
+        <input type="checkbox" id="causa-queda-moto" name="causa-queda-moto">
+        <label for="causa-queda-moto">Queda de Moto</label>
+
+        <input type="checkbox" id="causa-queda-nivel-2m" name="causa-queda-nivel-2m">
+        <label for="causa-queda-nivel-2m">Queda Nível &lt;2m</label>
+
+        <input type="checkbox" id="causa-trabalho" name="causa-trabalho">
+        <label for="causa-trabalho">Trabalho</label>
+
+        <input type="checkbox" id="causa-transferencia" name="causa-transferencia">
+        <label for="causa-transferencia">Transferência</label>
+
+        <input type="checkbox" id="outro" name="outro">
+        <label for="outro">Outro</label>
+
+        <input type="text" id="escrever" name="escrever" class="escrever">
+
+
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-btn" onclick="toggleDropdown()">
+        <h3>PROBLEMAS ENCONTRADOS NO SUSPEITO:</h3>
+      </button>
+      <div class="dropdown-content" id="dropdown-content">
+
+        <div class="column">
+          <input type="checkbox" id="problema-dpoc" name="problema-dpoc">
+          <label for="problema-dpoc">DPOC</label>
+
+          <input type="checkbox" id="problema-inalacao-defumaca" name="problema-inalacao-defumaca">
+          <label for="problema-inalacao-defumaca">Inalação de Fumaça</label>
+
+          <input type="checkbox" id="problema-hiperglicemia" name="problema-hiperglicemia">
+          <label for="problema-hiperglicemia">Hiperglicemia</label>
+
+          <input type="checkbox" id="problema-hipoglicemia" name="problema-hipoglicemia">
+          <label for="problema-hipoglicemia">Hipoglicemia</label>
+
+          <input type="checkbox" id="problema-psiquiatrico" name="problema-psiquiatrico">
+          <label for="problema-psiquiatrico">Psiquiátrico</label>
+
+          <input type="checkbox" id="outros" name="outros">
+          <label for="outros">Outro</label>
+
+          <input type="text" id="escrever" name="escrever" class="escrever">
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-btn" onclick="toggleDropdown()">
+        <h3>OBSTÉTRICO:</h3>
+      </button>
+
+      <div class="dropdown-content" id="dropdown-content">
+        <input type="checkbox" id="parto-emergencial" name="parto-emergencial">
+        <label for="parto-emergencial">Parto Emergencial</label>
+
+        <input type="checkbox" id="gestante" name="gestante">
+        <label for="gestante">Gestante</label>
+
+        <input type="checkbox" id="hemorragia-excessiva" name="hemorragia-excessiva">
+        <label for="hemorragia-excessiva">Hemorragia Excessiva</label>
+
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropdown-btn" onclick="toggleDropdown()">
+        <h3>TRANSPORTE:</h3>
+      </button>
+
+      <div class="dropdown-content" id="dropdown-content">
+        <input type="checkbox" id="aereo" name="aereo">
+        <label for="aereo">Aéreo</label>
+      
+        <input type="checkbox" id="clinico" name="clinico">
+        <label for="clinico">Clínico</label>
+      
+        <input type="checkbox" id="emergencial" name="emergencial">
+        <label for="emergencial">Emergencial</label>
+      
+        <input type="checkbox" id="pos-trauma" name="pos-trauma">
+        <label for="pos-trauma">Pós-Trauma</label>
+      
+        <input type="checkbox" id="samu" name="samu">
+        <label for="samu">SAMU</label>
+      
+        <input type="checkbox" id="sem-remocao" name="sem-remocao">
+        <label for="sem-remocao">Sem Remoção</label>
+
+          <input type="checkbox" id="outrosS" name="outrosS">
+          <label for="outrosS">Outros:</label>
+
+          <input type="text" id="escrever" name="escrever" class="escrever">
+      
+          
+        </div>
+      </div>
+      
+
+      <div class="borda_down">
+        <div class="footer">
+          <input type="submit" value="Próximo">
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      var dropdownContent = document.getElementById("dropdown-content");
+      dropdownContent.style.display = "none";
+
+      function toggleDropdown() {
+        dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+      }
+      document.addEventListener("click", function (event) {
+        var dropdownContent = document.getElementById("dropdown-content");
+        var dropdownBtn = document.getElementById("dropdown-btn");
+
+        if (!dropdownContent.contains(event.target) && !dropdownBtn.contains(event.target)) {
+          dropdownContent.classList.remove("show");
+        }
+      });
+
+      // Permitir apenas uma opção selecionada
+      var checkboxes = document.querySelectorAll(".dropdown-content input[type='checkbox']");
+
+      checkboxes.forEach(function (checkbox) {
+        checkbox.addEventListener("change", function () {
+          checkboxes.forEach(function (otherCheckbox) {
+            if (otherCheckbox !== checkbox) {
+              otherCheckbox.checked = false;
+            }
+          });
+        });
+      });
+
+
+    </script>
+    </script>
+
+</body>
+
+</html>

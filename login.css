@@ -10,6 +10,12 @@
   justify-content: space-between;
   padding: 20px;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: lightgrey;
+}
  
 .borda {
 border: solid 2px ;
@@ -45,26 +51,8 @@ border: solid 2px ;
   color: white;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  padding: 40px;
-  background-color: lightgrey;
-}
-
 .header-wrapper {
   background-color: rgb(212, 0, 0);
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.logo-left,
-.logo-right {
-  margin-right: 10px;
 }
 
 .row {

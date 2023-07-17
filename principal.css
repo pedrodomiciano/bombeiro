@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 10%;
+  background-color: lightgrey;
+  position: relative;
+  min-height: 100vh;
+}
+
+.logo-left,
+.logo-right {
+  margin-right: 10px;
+}
+
+.logo-left img,
+.logo-right img {
+  max-width: 80px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.header-wrapper {
+  background-color: rgb(212, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.dropdown-content label.selected {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.dropdown {
+  position: relative;
+  display:block;
+  margin-bottom: 8px;
+}
+
+.escrever {
+  width: 100%;
+  height: 30px;
+}
+
+.dropdown-btn {
+  background-color: #0e2ddb;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  padding: 10px;
+  display: flex;
+  flex-wrap:nowrap;
+  gap: 20px;
+  display: none;
+  column-count: 4; /* Dividir as opções em três colunas */
+}
+
+
+.column {
+  flex: 1 1 50%;
+}
+
+.dropdown-content label {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 25px; /* Espaçamento vertical entre as opções */
+  padding-left: 30px;
+  position: relative;
+  width: 200px;
+}
+.dropdown-content label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.dropdown-content input[type="checkbox"]:checked + label:before {
+  background-color: #3a4efc;
+}
+
+ 
+
+/* Classe para exibir as opções quando o menu dropdown é clicado */
+.dropdown-content.show {
+  display: block;
+  
+}
+
+
+.dropdown-content input[type="checkbox"] {
+  margin-right: 5px;
+  transform: scale(1.5);
+  display: none;
+  width: 80px; /* Ajustar a largura da caixa de seleção */
+  height: 50px; /* Ajustar a altura da caixa de seleção */
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content input[type="checkbox"]:checked + label {
+  color: rgb(255, 255, 255);
+  background-color: red;
+  border: 1px solid rgb(0, 0, 0);
+  width: 100%;
+}
+
+.dropdown-content input[type="checkbox"]:not(:checked) + label {
+  color: black;
+}
+.footer {
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer input[type="submit"] {
+  background-color: #0e2ddb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.footer input[type="submit"]:hover {
+  background-color: #3a4efc;
+}
+
+
+/* Media queries para tornar o menu responsivo em dispositivos móveis */
+@media (max-width: 600px) {
+  .dropdown-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .dropdown-content {
+    padding: 8px;
+  }
+}
